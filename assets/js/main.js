@@ -1,5 +1,5 @@
 
-
+temas("spring2");
 //funcion del boton para los temas dependiendo del spring
 
 function temas(valor){
