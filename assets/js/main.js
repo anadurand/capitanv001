@@ -75,9 +75,12 @@ function mostrar(valor){
 
 }
 
-//Solucion de respuesta
+//Funciones de la solucion de respuesta
 
+function solucion(){
+  var pregunta = document.getElementById('id')
 
+}
 
 
 
