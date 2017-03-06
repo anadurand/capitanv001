@@ -1,3 +1,5 @@
+//Aqui va el codigo de la pagina de dropdown
+
 var contenedor = document.getElementById("contenedor")
 var arrayEstudiantes=[];
 //este array tiene dentro objetos
