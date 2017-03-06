@@ -1,3 +1,4 @@
+//Funcion del boton dropdown
 function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
