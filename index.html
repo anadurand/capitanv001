@@ -25,17 +25,57 @@
   <h3>Temas</h3>
   <br><br>
   <div class="botones">
-    <button type="button" name="spring1">Spring 1</button>
-    <button type="button" name="spring2">Spring 2</button>
-    <button type="button" name="spring3">Spring 3</button>
+    <button type="button" name="spring1" onclick="temas(name);">Spring 1</button>
+    <button type="button" name="spring2" onclick="temas(name);">Spring 2</button>
+    <button type="button" name="spring3" onclick="temas(name);">Spring 3</button>
   </div>
-  <br><br>
+
   <div class="" id="leccion">
     <!--contenido de leccion-->
   </div>
-  <hr>
+
+  <div class="" id = "contenido">
+    <!--contenido de temas-->
+  </div>
   <div class="" id="quiz">
     <!--contenido de quiz-->
+  </div>
+  <div id = "spring1">
+    <hr>
+    <form>
+        <h4><label> Existen dos tipos de funciones </label></h4>
+        <input type = 'radio'> Expresadas y declaradas<br>
+        <input type = 'radio'> Explicitas y declaradas <br>
+        <input type = 'radio'> Expresadas y derivadas<br><br>
+        <h4><label> Elije una propiedad de los arreglos </label></h4>
+        <input type = 'radio'> clear<br>
+        <input type = 'radio'> pop <br>
+        <input type = 'radio'> add<br><br>
+        <h4><label> Un objeto tiene _ _ _ _ y _ _ _ _ </label></h4>
+        <input type = 'radio'> números y letras<br>
+        <input type = 'radio'> partes y validaciones <br>
+        <input type = 'radio'> propiedades y valores<br>
+      </form>;
+  </div>
+  <div id = "spring2">
+    <hr>
+    <form>
+        <h4><label> ¿Cuál es el comando para iniciar un repositorio desde la consola? </label></h4>
+        <input type = 'radio'> git init .<br>
+        <input type = 'radio'> git init <br>
+        <input type = 'radio'> git init add<br><br>
+        <h4><label> ¿Cuál es el la finalidad de hacer una prueba unitaria? </label></h4>
+        <input type = 'radio'> Comprobar que el código funciona correctamente<br>
+        <input type = 'radio'> Darle valores a los parametros de dichas funciones <br>
+        <input type = 'radio'> No tiene ningún fin<br><br>
+        <h4><label> ¿Que significa DOM? </label></h4>
+        <input type = 'radio'> Dual Objet Model<br>
+        <input type = 'radio'> Document Objet Model <br>
+        <input type = 'radio'> Document Obsolet Model<br>
+      </form>
+  </div>
+  <div id="spring3">
+
   </div>
   <script src="assets/js/main.js" charset="utf-8"></script>
 </body>

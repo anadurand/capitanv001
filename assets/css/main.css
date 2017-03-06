@@ -75,6 +75,16 @@ img{
 
 }
 
+#spring1{
+  display: none;
+}
+#spring2{
+  display: none;
+}
+#spring3{
+  display: none;
+}
+
 /*css para el boton drop  */
 .dropbtn {
   background-color: white;
