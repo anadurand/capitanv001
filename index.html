@@ -43,38 +43,53 @@
   <div id = "spring1">
     <hr>
     <form>
-      <form>
-        <h4><label> Existen dos tipos de funciones </label></h4>
-        <input type = "radio"> Expresadas y declaradas<br>
-        <input type = "radio"> Explicitas y declaradas <br>
-        <input type = "radio"> Expresadas y derivadas<br><br>
-
-      </form>
+      <h4><label> Existen dos tipos de funciones </label></h4>
+        <div class="">
+          <input type = "radio" name = "1p1"> Expresadas y declaradas<br>
+          <input type = "radio" name = "1p1"> Explicitas y declaradas <br>
+          <input type = "radio" name = "1p1"> Expresadas y derivadas<br><br>
+        </div>
         <h4><label> Elije una propiedad de los arreglos </label></h4>
-        <input type = 'radio'> clear<br>
-        <input type = 'radio'> pop <br>
-        <input type = 'radio'> add<br><br>
+        <div class="">
+          <input type = 'radio' name = "1p2"> clear<br>
+          <input type = 'radio' name = "1p2"> pop <br>
+          <input type = 'radio' name = "1p2"> add<br><br>
+        </div>
         <h4><label> Un objeto tiene _ _ _ _ y _ _ _ _ </label></h4>
-        <input type = 'radio'> números y letras<br>
-        <input type = 'radio'> partes y validaciones <br>
-        <input type = 'radio'> propiedades y valores<br>
+        <div class="">
+          <input type = 'radio' name = "1p3"> números y letras<br>
+          <input type = 'radio' name = "1p3"> partes y validaciones <br>
+          <input type = 'radio' name = "1p3"> propiedades y valores<br>
+        </div>
+        <br><br>
+        <button type="button" name="button" onclick="total1();">Enviar</button>
       </form>;
   </div>
   <div id = "spring2">
     <hr>
     <form>
         <h4><label> ¿Cuál es el comando para iniciar un repositorio desde la consola? </label></h4>
-        <input type = 'radio'> git init .<br>
-        <input type = 'radio'> git init <br>
-        <input type = 'radio'> git init add<br><br>
-        <h4><label> ¿Cuál es el la finalidad de hacer una prueba unitaria? </label></h4>
-        <input type = 'radio'> Comprobar que el código funciona correctamente<br>
-        <input type = 'radio'> Darle valores a los parametros de dichas funciones <br>
-        <input type = 'radio'> No tiene ningún fin<br><br>
+          <div class="">
+            <input type = 'radio' name = "2p1"> git init .<br>
+            <input type = 'radio' name = "2p1"> git init <br>
+            <input type = 'radio' name = "2p1"> git init add<br><br>
+          </div>
+        <h4> ¿Cuál es el la finalidad de hacer una prueba unitaria? </h4>
+          <div class="">
+            <input type = 'radio' name = "2p2"> Comprobar que el código funciona correctamente<br>
+            <input type = 'radio' name = "2p2"> Darle valores a los parametros de dichas funciones <br>
+            <input type = 'radio' name = "2p2"> No tiene ningún fin<br><br>
+
+          </div>
         <h4><label> ¿Que significa DOM? </label></h4>
-        <input type = 'radio'> Dual Objet Model<br>
-        <input type = 'radio'> Document Objet Model <br>
-        <input type = 'radio'> Document Obsolet Model<br>
+          <div class="">
+            <input type = 'radio' name = "2p3"> Dual Objet Model<br>
+            <input type = 'radio' name = "2p3"> Document Objet Model <br>
+            <input type = 'radio' name = "2p3"> Document Obsolet Model<br>
+
+          </div>
+          <br><br>
+          <button type="button" name="button" onclick="total2();">Enviar</button>
       </form>
   </div>
   <div id="spring3">

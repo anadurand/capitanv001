@@ -58,12 +58,24 @@ function sumary(valor){
 
 function mostrar(valor){
   var text = document.getElementById(valor);
-
-  if(text.style.display != "none"){
     text.style.display = "block";
+  switch (valor) {
+    case "spring1":  document.getElementById("spring2").style.display = "none";
+                     document.getElementById("spring3").style.display = "none"
+      break;
+    case "spring2":  document.getElementById("spring1").style.display = "none";
+                     document.getElementById("spring3").style.display = "none"
+      break;
+    case "spring3":  document.getElementById("spring1").style.display = "none";
+                    document.getElementById("spring2").style.display = "none"
+        break;
+    default:
+
   }
 
 }
+
+//Solucion de respuesta
 
 
 
