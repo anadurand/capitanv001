@@ -1,7 +1,4 @@
 
-var name = prompt("Ingresa tu nombre");
-var nombre = document.getElementById("nombre");
-nombre.innerHTML = name.toUpperCase();
 temas("spring2");
 
 //funcion del boton para los temas dependiendo del spring
