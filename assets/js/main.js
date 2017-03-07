@@ -95,11 +95,11 @@ function solucion1(){
       if(r2[i].checked){ if(r2[i].value == "2"){ c++;}}
       if(r3[i].checked){ if(r3[i].value == "3"){ c++;}}
     }
+    pregunta.innerHTML = "Tienes " + c + "  respuestas correctas";
   }else{
     alert("Flatan pregunatas por responder");
   }
 
-pregunta.innerHTML = "Tienes " + c + "  respuestas correctas";
 }
 
 function solucion2(){
@@ -116,11 +116,11 @@ function solucion2(){
       if(r2[i].checked){ if(r2[i].value == "1"){ c++;}}
       if(r3[i].checked){ if(r3[i].value == "2"){ c++;}}
     }
+    pregunta.innerHTML = "Tienes " + c + "  respuestas correctas";
   }else{
     alert("Flatan pregunatas por responder");
   }
 
-pregunta.innerHTML = "Tienes " + c + "  respuestas correctas";
 }
 
 function validar(r1,r2,r3){
