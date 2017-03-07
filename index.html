@@ -25,9 +25,9 @@
   <h3>Temas</h3>
   <br><br>
   <div class="botones">
-    <button type="button" name="spring1" onclick="temas(name);">Spring 1</button>
-    <button type="button" name="spring2" onclick="temas(name);">Spring 2</button>
-    <button type="button" name="spring3" onclick="temas(name);">Spring 3</button>
+    <button type="button" name="spring1" onclick="temas(name);">Sprint 1</button>
+    <button type="button" name="spring2" onclick="temas(name);">Sprint 2</button>
+    <button type="button" name="spring3" onclick="temas(name);">Sprint 3</button>
   </div>
 
   <div class="" id="leccion">
@@ -37,60 +37,65 @@
   <div class="" id = "contenido">
     <!--contenido de temas-->
   </div>
-  <div class="" id="quiz">
-    <!--contenido de quiz-->
-  </div>
   <div id = "spring1">
     <hr>
-    <form>
-      <h4><label> Existen dos tipos de funciones </label></h4>
+    <h4>Quiz</h4>
+    <div id="quiz1">
+      <form>
+        <h4><label> Existen dos tipos de funciones </label></h4>
         <div class="pregunta1.1">
-          <input type = "radio" name = "1p1"> Expresadas y declaradas<br>
-          <input type = "radio" name = "1p1"> Explicitas y declaradas <br>
-          <input type = "radio" name = "1p1"> Expresadas y derivadas<br><br>
+          <input type = "radio" name = "1p1" value="1"> Expresadas y declaradas<br>
+          <input type = "radio" name = "1p1" value="2"> Explicitas y declaradas <br>
+          <input type = "radio" name = "1p1" value="3"> Expresadas y derivadas<br><br>
         </div>
         <h4><label> Elije una propiedad de los arreglos </label></h4>
         <div class="pregunta1.2">
-          <input type = 'radio' name = "1p2"> clear<br>
-          <input type = 'radio' name = "1p2"> pop <br>
-          <input type = 'radio' name = "1p2"> add<br><br>
+          <input type = 'radio' name = "1p2" value="1"> clear<br>
+          <input type = 'radio' name = "1p2" value="2"> pop <br>
+          <input type = 'radio' name = "1p2" value="3"> add<br><br>
         </div>
         <h4><label> Un objeto tiene _ _ _ _ y _ _ _ _ </label></h4>
         <div class="pregunta1.3">
-          <input type = 'radio' name = "1p3"> números y letras<br>
-          <input type = 'radio' name = "1p3"> partes y validaciones <br>
-          <input type = 'radio' name = "1p3"> propiedades y valores<br>
+          <input type = 'radio' name = "1p3" value="1"> números y letras<br>
+          <input type = 'radio' name = "1p3" value="2"> partes y validaciones <br>
+          <input type = 'radio' name = "1p3" value="3"> propiedades y valores<br>
         </div>
         <br><br>
-        <button type="button" name="button" onclick="total1();">Enviar</button>
-      </form>;
+        <button type="button" name="button" onclick="solucion1();">Enviar</button>
+      </form>
+
+    </div>
   </div>
   <div id = "spring2">
     <hr>
-    <form>
+    <h4>Quiz</h4>
+    <div id= "quiz2">
+      <form>
         <h4><label> ¿Cuál es el comando para iniciar un repositorio desde la consola? </label></h4>
-          <div class="">
-            <input type = 'radio' name = "2p1"> git init .<br>
-            <input type = 'radio' name = "2p1"> git init <br>
-            <input type = 'radio' name = "2p1"> git init add<br><br>
-          </div>
+        <div class="">
+          <input type = 'radio' name = "2p1" value="1"> git init .<br>
+          <input type = 'radio' name = "2p1" value="2"> git init <br>
+          <input type = 'radio' name = "2p1" value="3"> git init add<br><br>
+        </div>
         <h4> ¿Cuál es el la finalidad de hacer una prueba unitaria? </h4>
-          <div class="">
-            <input type = 'radio' name = "2p2"> Comprobar que el código funciona correctamente<br>
-            <input type = 'radio' name = "2p2"> Darle valores a los parametros de dichas funciones <br>
-            <input type = 'radio' name = "2p2"> No tiene ningún fin<br><br>
+        <div class="">
+          <input type = 'radio' name = "2p2" value="1"> Comprobar que el código funciona correctamente<br>
+          <input type = 'radio' name = "2p2" value="2"> Darle valores a los parametros de dichas funciones <br>
+          <input type = 'radio' name = "2p2" value="3"> No tiene ningún fin<br><br>
 
-          </div>
+        </div>
         <h4><label> ¿Que significa DOM? </label></h4>
-          <div class="">
-            <input type = 'radio' name = "2p3"> Dual Objet Model<br>
-            <input type = 'radio' name = "2p3"> Document Objet Model <br>
-            <input type = 'radio' name = "2p3"> Document Obsolet Model<br>
+        <div class="">
+          <input type = 'radio' name = "2p3" value="1"> Dual Objet Model<br>
+          <input type = 'radio' name = "2p3" value="2"> Document Objet Model <br>
+          <input type = 'radio' name = "2p3" value="3"> Document Obsolet Model<br>
 
-          </div>
-          <br><br>
-          <button type="button" name="button" onclick="total2();">Enviar</button>
+        </div>
+        <br><br>
+        <button type="button" name="button" onclick="solucion2();">Enviar</button>
       </form>
+
+    </div>
   </div>
   <div id="spring3">
 

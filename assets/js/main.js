@@ -1,5 +1,9 @@
 
+var name = prompt("Ingresa tu nombre");
+var nombre = document.getElementById("nombre");
+nombre.innerHTML = name.toUpperCase();
 temas("spring2");
+
 //funcion del boton para los temas dependiendo del spring
 
 function temas(valor){
@@ -61,13 +65,13 @@ function mostrar(valor){
     text.style.display = "block";
   switch (valor) {
     case "spring1":  document.getElementById("spring2").style.display = "none";
-                     document.getElementById("spring3").style.display = "none"
+                     document.getElementById("spring3").style.display = "none";
       break;
     case "spring2":  document.getElementById("spring1").style.display = "none";
-                     document.getElementById("spring3").style.display = "none"
+                     document.getElementById("spring3").style.display = "none";
       break;
     case "spring3":  document.getElementById("spring1").style.display = "none";
-                    document.getElementById("spring2").style.display = "none"
+                    document.getElementById("spring2").style.display = "none";
         break;
     default:
 
@@ -77,10 +81,63 @@ function mostrar(valor){
 
 //Funciones de la solucion de respuesta
 
-function solucion(){
-  var pregunta = document.getElementById('id')
+function solucion1(){
+  var pregunta = document.getElementById('quiz1')
+  var r1 = document.getElementsByName("1p1");
+  var r2 = document.getElementsByName("1p2");
+  var r3 = document.getElementsByName("1p3");
+  var c = 0;
+
+  if(validar(r1,r2,r3)){
+
+    for(i=0; i<3; i++){
+      if(r1[i].checked){ if(r1[i].value == "3"){ c++;}}
+      if(r2[i].checked){ if(r2[i].value == "2"){ c++;}}
+      if(r3[i].checked){ if(r3[i].value == "3"){ c++;}}
+    }
+  }else{
+    alert("Flatan pregunatas por responder");
+  }
+
+pregunta.innerHTML = "Tienes " + c + "  respuestas correctas";
+}
+
+function solucion2(){
+  var pregunta = document.getElementById('quiz2')
+  var r1 = document.getElementsByName("2p1");
+  var r2 = document.getElementsByName("2p2");
+  var r3 = document.getElementsByName("2p3");
+  var c = 0;
+
+  if(validar(r1,r2,r3)){
+
+    for(i=0; i<3; i++){
+      if(r1[i].checked){ if(r1[i].value == "1"){ c++;}}
+      if(r2[i].checked){ if(r2[i].value == "1"){ c++;}}
+      if(r3[i].checked){ if(r3[i].value == "2"){ c++;}}
+    }
+  }else{
+    alert("Flatan pregunatas por responder");
+  }
+
+pregunta.innerHTML = "Tienes " + c + "  respuestas correctas";
+}
+
+function validar(r1,r2,r3){
+  var x = 0;
+  r1.forEach(function(item,i){
+    if(item.checked){ x++;}
+  });
+  r2.forEach(function(item,i){
+    if(item.checked){ x++;}
+  });
+  r3.forEach(function(item,i){
+    if(item.checked){ x++;}
+  });
+  if(x==3){ return true;}else{return false;}
 
 }
+
 
 
 
