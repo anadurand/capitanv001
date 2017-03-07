@@ -101,5 +101,18 @@
 
   </div>
   <script src="assets/js/main.js" charset="utf-8"></script>
+  <script>
+     var myParam = location.search.split('nombre=')[1]
+     var nombre = document.getElementById('nombre');
+     if (myParam == undefined) {
+         var inicio = prompt('Cual es tu nombre').toUpperCase();
+         nombre.innerHTML = inicio;
+     } else {
+         nombre.innerHTML = myParam;
+     }
+     document.getElementById("coder").addEventListener('click',function() {
+         this.href += "?nombre="+nombre.innerHTML;
+     })
+ </script>
 </body>
 </html>

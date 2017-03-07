@@ -12,8 +12,16 @@
 
   </div>
   <br><br>
-  <!--<button name="button" class="boton-volver-inicio"><a href="https://anadurand.github.io/capitanv001">Regresar al inicio</a></button>-->
-    <input type="button" value="Regresar al inicio" name="inicio" onclick="history.go(-1)" class="boton-volver-inicio">
+  <footer>
+<button type="button" name="button" class="boton-volver-inicio"><a href="index.html" id="regresar">Regresar al inicio</a></button>
+</footer>
+<script src="assets/js/js2.js" charset="utf-8"></script>
+  <script>
+      var myParam = location.search.split('nombre=')[1]
+      document.getElementById("regresar").addEventListener('click',function(e) {
+          this.href += "?nombre="+myParam;
+      })
+  </script>
   <script src="assets/js/js2.js" charset="utf-8"></script>
 </body>
 </html>
